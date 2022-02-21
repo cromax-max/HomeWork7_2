@@ -8,5 +8,30 @@
   },
   "author": "",
   "license": "ISC",
-  "private":"true"
+  "private": true,
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "eqeqeq": "warn",
+      "no-debugger": "off"
+    }
+  },
+  "dependencies": {
+    "eslint": "^8.9.0"
+  }
 }
